@@ -1,0 +1,126 @@
+
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+Extension host agent listening on 41313
+
+[13:41:58] Extension host agent started.
+[13:41:58] [127.0.0.1][869e30a5][ManagementConnection] New connection established.
+[13:41:58] [127.0.0.1][451bdc4f][ExtensionHostConnection] New connection established.
+[13:41:58] [127.0.0.1][451bdc4f][ExtensionHostConnection] <27494> Launched Extension Host Process.
+[13:41:59] Deleted from disk vscjava.vscode-java-test /home/admin/.vscode-server/extensions/vscjava.vscode-java-test-0.33.1
+[13:41:59] Deleted from disk vscjava.vscode-java-dependency /home/admin/.vscode-server/extensions/vscjava.vscode-java-dependency-0.18.9
+[13:42:00] Deleted from disk ms-azuretools.vscode-docker /home/admin/.vscode-server/extensions/ms-azuretools.vscode-docker-1.18.0
+[13:42:00] Deleted from disk visualstudioexptteam.vscodeintellicode /home/admin/.vscode-server/extensions/visualstudioexptteam.vscodeintellicode-1.2.15
+[13:42:00] Deleted from disk vscjava.vscode-maven /home/admin/.vscode-server/extensions/vscjava.vscode-maven-0.34.2
+[13:42:00] [File Watcher (parcel)] Unexpected error: Bad file descriptor (EUNKNOWN) (path: /home/admin)
+[13:42:00] [File Watcher (parcel)] restarting watcher after error: Bad file descriptor
+[13:42:00] Deleted from disk redhat.java /home/admin/.vscode-server/extensions/redhat.java-1.2.0
+[13:42:00] Deleted from disk ms-python.vscode-pylance /home/admin/.vscode-server/extensions/ms-python.vscode-pylance-2022.1.1
+[13:42:00] [File Watcher (parcel)] Unexpected error: Bad file descriptor (EUNKNOWN) (path: /home/admin)
+[13:42:00] [File Watcher (parcel)] restarting watcher after error: Bad file descriptor
+[13:42:01] [File Watcher (parcel)] Unexpected error: Bad file descriptor (EUNKNOWN) (path: /home/admin)
+[13:42:01] [File Watcher (parcel)] restarting watcher after error: Bad file descriptor
+[13:42:01] [File Watcher (parcel)] Unexpected error: Bad file descriptor (EUNKNOWN) (path: /home/admin)
+[13:42:01] [File Watcher (parcel)] restarting watcher after error: Bad file descriptor
+[13:42:01] [File Watcher (parcel)] Unexpected error: Bad file descriptor (EUNKNOWN) (path: /home/admin)
+[13:42:01] [File Watcher (parcel)] restarting watcher after error: Bad file descriptor
+[13:42:01] [File Watcher (parcel)] Unexpected error: Bad file descriptor (EUNKNOWN) (path: /home/admin)
+[13:42:01] [File Watcher (parcel)] gave up attempting to restart watcher after error: Bad file descriptor
+[IPC Library: Pty Host]  INFO Persistent process "1": Replaying 806 chars and 1 size events
+[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/admin/flask-mongo-demo/mongodata/journal/'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/home/admin/flask-mongo-demo/mongodata/journal/'
+}
+[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/admin/flask-mongo-demo/mongodata/journal/'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/home/admin/flask-mongo-demo/mongodata/journal/'
+}
+[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/admin/flask-mongo-demo/mongodata/diagnostic.data/'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/home/admin/flask-mongo-demo/mongodata/diagnostic.data/'
+}
+[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/admin/flask-mongo-demo/mongodata/diagnostic.data/'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/home/admin/flask-mongo-demo/mongodata/diagnostic.data/'
+}
+[13:47:30] Installing extension: donjayamanne.githistory
+[13:47:31] Downloaded extension: donjayamanne.githistory /home/admin/.vscode-server/data/CachedExtensionVSIXs/donjayamanne.githistory-0.6.19
+[13:47:31] Extracted extension to /home/admin/.vscode-server/extensions/.12e5bbae-f2fd-49bf-860a-91cd83a6c663: donjayamanne.githistory
+[13:47:31] Installing extension: eamodio.gitlens
+[13:47:31] Renamed to /home/admin/.vscode-server/extensions/donjayamanne.githistory-0.6.19
+[13:47:31] Extracting completed. donjayamanne.githistory
+[13:47:31] Extension installed successfully: donjayamanne.githistory
+[13:47:32] Downloaded extension: eamodio.gitlens /home/admin/.vscode-server/data/CachedExtensionVSIXs/eamodio.gitlens-11.7.0
+[13:47:32] Extracted extension to /home/admin/.vscode-server/extensions/.c6d2fdfa-9233-4a0b-a075-879ccb964946: eamodio.gitlens
+[13:47:32] Renamed to /home/admin/.vscode-server/extensions/eamodio.gitlens-11.7.0
+[13:47:32] Extracting completed. eamodio.gitlens
+[13:47:32] Extension installed successfully: eamodio.gitlens
+[13:47:34] Installing extension: donjayamanne.git-extension-pack
+[13:47:35] Installing extension: alefragnani.project-manager
+[13:47:35] Installing extension: codezombiech.gitignore
+[13:47:35] Installing extension: ziyasal.vscode-open-in-github
+[13:47:35] Extension is already requested to install ziyasal.vscode-open-in-github
+[13:47:35] Extension is already requested to install codezombiech.gitignore
+[13:47:35] Extension is already requested to install ziyasal.vscode-open-in-github
+[13:47:36] Downloaded extension: ziyasal.vscode-open-in-github /home/admin/.vscode-server/data/CachedExtensionVSIXs/ziyasal.vscode-open-in-github-1.3.6
+[13:47:36] Downloaded extension: codezombiech.gitignore /home/admin/.vscode-server/data/CachedExtensionVSIXs/codezombiech.gitignore-0.7.0
+[13:47:36] Extracted extension to /home/admin/.vscode-server/extensions/.58181581-2da4-43c0-91c8-3f100a2702ab: ziyasal.vscode-open-in-github
+[13:47:36] Renamed to /home/admin/.vscode-server/extensions/ziyasal.vscode-open-in-github-1.3.6
+[13:47:36] Extracting completed. ziyasal.vscode-open-in-github
+[13:47:37] Downloaded extension: alefragnani.project-manager /home/admin/.vscode-server/data/CachedExtensionVSIXs/alefragnani.project-manager-12.4.0
+[13:47:37] Extracted extension to /home/admin/.vscode-server/extensions/.606e4ec9-d638-43ab-811e-441e8dc5646d: alefragnani.project-manager
+[13:47:37] Renamed to /home/admin/.vscode-server/extensions/alefragnani.project-manager-12.4.0
+[13:47:37] Extracting completed. alefragnani.project-manager
+[13:47:38] Extracted extension to /home/admin/.vscode-server/extensions/.07481c86-1920-43a6-9f07-954ac1bb2a7a: codezombiech.gitignore
+[13:47:38] Renamed to /home/admin/.vscode-server/extensions/codezombiech.gitignore-0.7.0
+[13:47:38] Extracting completed. codezombiech.gitignore
+[13:47:38] Downloaded extension: donjayamanne.git-extension-pack /home/admin/.vscode-server/data/CachedExtensionVSIXs/donjayamanne.git-extension-pack-0.1.3
+[13:47:38] Extracted extension to /home/admin/.vscode-server/extensions/.5eb72102-bac0-4352-893c-c0aa42353c82: donjayamanne.git-extension-pack
+[13:47:38] Renamed to /home/admin/.vscode-server/extensions/donjayamanne.git-extension-pack-0.1.3
+[13:47:38] Extracting completed. donjayamanne.git-extension-pack
+[13:47:38] Extension installed successfully: ziyasal.vscode-open-in-github
+[13:47:38] Extension installed successfully: alefragnani.project-manager
+[13:47:38] Extension installed successfully: codezombiech.gitignore
+[13:47:38] Extension installed successfully: donjayamanne.git-extension-pack
+[13:48:46] [127.0.0.1][76f5e827][ManagementConnection] New connection established.
+[13:48:46] [127.0.0.1][db5ae5a8][ExtensionHostConnection] New connection established.
+[13:48:46] [127.0.0.1][db5ae5a8][ExtensionHostConnection] <28529> Launched Extension Host Process.
+[13:48:51] Installing extension: vscjava.vscode-java-debug
+[13:48:51] Installing extension: vscjava.vscode-java-pack
+[13:48:51] Installing extension: ms-python.vscode-pylance
+[13:48:54] Downloaded extension: vscjava.vscode-java-pack /home/admin/.vscode-server/data/CachedExtensionVSIXs/vscjava.vscode-java-pack-0.21.0
+[13:48:54] Downloaded extension: vscjava.vscode-java-debug /home/admin/.vscode-server/data/CachedExtensionVSIXs/vscjava.vscode-java-debug-0.38.0
+[13:48:54] Extracted extension to /home/admin/.vscode-server/extensions/.c92b7d4b-e87b-4c4c-91f0-52bc19b1742c: vscjava.vscode-java-pack
+[13:48:54] Renamed to /home/admin/.vscode-server/extensions/vscjava.vscode-java-pack-0.21.0
+[13:48:54] Extracting completed. vscjava.vscode-java-pack
+[13:48:54] Extension installed successfully: vscjava.vscode-java-pack
+[13:48:54] Extracted extension to /home/admin/.vscode-server/extensions/.876e27e8-d889-4a6c-9fad-7818377a8028: vscjava.vscode-java-debug
+[13:48:54] Renamed to /home/admin/.vscode-server/extensions/vscjava.vscode-java-debug-0.38.0
+[13:48:54] Extracting completed. vscjava.vscode-java-debug
+[13:48:54] Extension installed successfully: vscjava.vscode-java-debug
+[13:48:57] Downloaded extension: ms-python.vscode-pylance /home/admin/.vscode-server/data/CachedExtensionVSIXs/ms-python.vscode-pylance-2022.1.5
+[13:49:01] Extracted extension to /home/admin/.vscode-server/extensions/.9ab01e23-7f25-40f9-a776-3ea20dcb6324: ms-python.vscode-pylance
+[13:49:01] Renamed to /home/admin/.vscode-server/extensions/ms-python.vscode-pylance-2022.1.5
+[13:49:01] Extracting completed. ms-python.vscode-pylance
+[13:49:01] Extension installed successfully: ms-python.vscode-pylance
+[13:49:05] [127.0.0.1][76f5e827][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[13:49:05] [127.0.0.1][db5ae5a8][ExtensionHostConnection] <28529> Extension Host Process exited with code: 0, signal: null.
+[13:49:13] [127.0.0.1][aad36eeb][ManagementConnection] New connection established.
+[13:49:13] [127.0.0.1][d55e1996][ExtensionHostConnection] New connection established.
+[13:49:13] [127.0.0.1][d55e1996][ExtensionHostConnection] <28702> Launched Extension Host Process.
+[13:49:28] [127.0.0.1][869e30a5][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[13:49:28] [127.0.0.1][451bdc4f][ExtensionHostConnection] <27494> Extension Host Process exited with code: 0, signal: null.
