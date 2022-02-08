@@ -45,6 +45,7 @@ def delete_movie(id):
     return '', 200
 
 @app.route('/movies', methods=['POST'])
+def add_movie(id): 
     body = request.get_json()
     movie = Movie(**body).save()
     id = movie.id
