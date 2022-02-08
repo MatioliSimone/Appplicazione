@@ -1,5 +1,8 @@
-from flask import Flask, jsonify, request
+
 from flask_cors import CORS
+from flask import Flask, request, Response
+from database.db import initialize_db
+from database.models import Movie
 
 IMAGES_PATH = "/static/img"
 POSTER_FORMAT_NAME = "{}_Poster.jpg"
@@ -21,48 +24,32 @@ def filterMovies(movies):
 app = Flask(__name__)
 CORS(app)
 
-movies = [
-    {
-        "name": "The Shawshank Redemption",
-        "casts": ["Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler"],
-        "director": "Frank Darabont",
-        "director_avatar": "Frank-Darabont_avatar.jpeg",
-        "genres": ["Drama"],
-        "poster": "Shawshank-Redemption_Poster.jpg",
-        "release_date": "September 10, 1994",
-    },
-    {
-       "name": "The Godfather ",
-       "casts": ["Marlon Brando", "Al Pacino", "James Caan", "Diane Keaton"],
-       "director": "Francis Ford Coppola",
-       "director_avatar": "Francis-Ford-Coppola_avatar.jpg",
-       "genres": ["Crime", "Drama"],
-       "poster": "The-Godfather_Poster.jpg",
-       "release_date": "March 14, 1972",
-    }
-]
+app.config['MONGODB_SETTINGS'] = {
+    'host': 'mongodb://localhost/movie-bag'
+}
 
-@app.route("/movies")
-def show_movies():
-    return jsonify(filterMovies(movies))
+initialize_db(app)
 
+@app.route('/movies')
+def get_movies():
+    movies = Movie.objects().to_json()
+    return Response(movies, mimetype="application/json", status=200)
 
 @app.route('/movies', methods=['POST'])
-def add_movie():
-    movie = request.get_json()
-    movies.append(movie)
-    return {'id': len(movies)}, 200
+    body = request.get_json()
+    movie = Movie(**body).save()
+    id = movie.id
+    return {'id': str(id)}, 200
 
-@app.route('/movies/<int:index>', methods=['PUT'])
-def update_movie(index):
-    movie = request.get_json()
-    movies[index] = movie
-    return jsonify(movies[index]), 200
+@app.route('/movies/<id>', methods=['PUT'])
+def update_movie(id):
+    body = request.get_json()
+    Movie.objects.get(id=id).update(**body)
+    return '', 200
 
-@app.route('/movies/<int:index>', methods=['DELETE'])
-def delete_movie(index):
-    movie = movies[index]
-    movies.pop(index)
-    return jsonify(movie), 200
+@app.route('/movies/<id>', methods=['DELETE'])
+def delete_movie(id):
+    Movie.objects.get(id=id).delete()
+    return '', 200
 
 app.run()
