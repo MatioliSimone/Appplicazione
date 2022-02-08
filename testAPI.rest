@@ -1,4 +1,17 @@
 GET https://localhost:5000/movies HTTP/1.1
-### 
 
-GET https://localhost:5000/en
+
+###
+
+GET http://localhost:5000/
+
+###
+
+POST http://localhost:5000/movies HTTP/1.1
+content-type: application/json
+{
+    "name": "The Dark Knight",
+    "casts": ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine"],
+    "genres": ["Action", "Crime", "Drama"],
+    "poster": "The-Dark-Knight_Poster.jpg"
+}
