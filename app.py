@@ -24,10 +24,10 @@ def filterMovies(movies):
 app = Flask(__name__)
 CORS(app)
 
-+app.config['MONGODB_SETTINGS'] = {
-+    'host': 'mongodb://localhost/movie-bag'
-+}
-+
+app.config['MONGODB_SETTINGS'] = {
+   'host': 'mongodb://localhost/movie-bag'
+}
+
 +initialize_db(app)
 
 @app.route("/movies")
