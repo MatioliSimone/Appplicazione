@@ -27,3 +27,8 @@ class MovieApi(Resource):
   def get(self, id):
     movies = Movie.objects.get(id=id).to_json()
     return Response(movies, mimetype="application/json", status=200)
+
+class MoviesApi(Resource):
+ def get(self):
+ movies = Movie.objects().to_json()
+ return Response(movies, mimetype="application/json", status=200)
